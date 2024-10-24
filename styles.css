@@ -1,0 +1,212 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+    color: #1D3557;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #1D3557;
+}
+
+a {
+    color: #1D3557;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #A8DADC;
+}
+
+/* Header */
+header {
+    background-color: #1D3557;
+    color: #FFFFFF;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo-img {
+    height: 150px; /* Ajusta el tamaño del logo aquí */
+    max-width: 100%;
+    width: auto; /* Esto mantiene la proporción de la imagen */
+    display: block;
+    margin: 0 auto; /* Centra el logo en su contenedor */
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header ul li a {
+    color: #FFFFFF;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+header ul li a:hover {
+    background-color: #A8DADC;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #1D3557;
+    color: #A8DADC;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-text {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #FFFFFF; /* Ajustado a blanco para contraste */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #A8DADC;
+    color: #1D3557;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #FFFFFF;
+    color: #1D3557;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #A8DADC;
+    display: inline-block;
+}
+
+.service-item, .pricing-plan, .blog-posts article {
+    background-color: #F0F4F8;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    background-color: #1D3557;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #A8DADC;
+    color: #1D3557;
+}
+
+/* Contact Section */
+form {
+    display: grid;
+    gap: 15px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    background-color: #A8DADC;
+    color: #1D3557;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1D3557;
+    color: #FFFFFF;
+}
+
+/* Footer */
+footer {
+    background-color: #1D3557;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #A8DADC;
+}
+
+footer a:hover {
+    color: #FFFFFF;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+
+    .services, .pricing {
+        grid-template-columns: 1fr;
+    }
+}
